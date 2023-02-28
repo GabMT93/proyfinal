@@ -15,6 +15,7 @@
  body {
     min-height: 100vh;
     background-color: bisque;
+    text-align: left;
   }
 #lista1 li {
     display:inline;
@@ -25,7 +26,12 @@
     transform: scale(1.5);
     padding: 5px;
 }
-
+.laboral,.est {
+    text-align: left;
+}
+.personal,.mot {
+    text-align: center;
+}
 .fotocv {
     float:right;
     border-radius: 100px;
@@ -35,19 +41,8 @@ header,footer {
     text-align: center;
     color: beige;
 }
-.personal {
-    text-align: center;
-}
-.InfoPersonal {
-    text-align: justify;
+.exp {
     padding-left: 5px;
-}
-.ExperienciaLaboral {
-    text-align: left;
-    padding-left: 30px;
-}
-.Estudios {
-    text-align: left;
 }
 .mit,.harvard {
     cursor: pointer;
