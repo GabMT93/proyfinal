@@ -3,9 +3,8 @@
     <head>
         <title>Proyecto Final CV 2023</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Procedo con el método @import debido a que no conseguí vincular el documento css de otra forma--> 
-        <style> @import url(estilos/estilos.css);</style>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="estilos\estilos.css">
         <link rel="icon" type="image/x-icon" href="estilos/proyectofinal.ico">
         <!--Open Graph Data-->
         <meta property="og:title" content="Proyecto Final Front End" />
@@ -15,36 +14,43 @@
         <meta property="og:description" content="Proyecto final curso Front End Argentina Programa 4.0" />
     </head>
     <body>
-    <header>  
-        <h1>Rita Stewart</h1>
-        <p>Ingeniera de Software</p> 
+        <span class="icon-Calendar"></span>
+    <header>
+        <img class="fotocv" src="multimedia/rita.jpg" alt="Rita Stewart, Software Engineer" />
+        <h1 class="titulo">Rita Stewart</h1>
+        <p class="datos"><ul id="lista1">
+        <li><img class="icon1" src="multimedia\391-mail4.svg" alt="icono mail" />rita.stewart@gmail.com </li>
+        <li><img class="icon2" src="multimedia\084-calendar.svg" alt="icono calendario" />09/06/1989 </li>
+        <li><img class="icon3" src="multimedia\001-home.svg" alt="icono casa" />6644 Oak Lawn Ave, TEXAS, EE.UU </li>
+        <li><img class="icon4" src="multimedia\067-phone.svg" alt="icono tel" />(576)622-5617 </p></li> 
+    </ul>
     </header>
-    <section class="Email"><h2>Email</h2> 
-        <p>rita.stewart@gmail.com</p>
-    </section>
-    <section class="Nacimiento"><h2>Fecha de nacimiento</h2>
-        <p>09/06/1989</p> 
-    </section>
-    <section class="Domicilio"></section><h2>Dirección</h2>
-        <p>6644 Oak Lawn Ave, TEXAS, EE.UU</p> 
-    </section>
-    <section class="NContacto"> <h2>Telefono</h2>
-        <p>(576)622-5617</p> 
-    </section>
-    <section class="Estudios"> <h2>Estudios</h2>
+<section class="InfoPersonal"> <h2 class="personal">Acerca de mí</h2>
+    <p>Apasionada de la tecnología en general y los negocios, aficionada de los videojuegos como hobby, me dedico
+        al desarrollo de software en general, con experiencia en el mundo administrativo con herramientas internas,
+        en el de negocios con herramientas que se venden al público y con videojuegos.
+    </p></section>
+    <section class="ExperienciaLaboral"> <h2>Experiencia Laboral</h2>
+        <p><ul>
+            <li>2013-2014- Reconex - Developer</li>
+            <li>2014-2016- Trust Digital - Developer</li>
+            <li>2016-2018- Motion Twin - Developer in "Dead Cells"</li>
+            <li>2018-2023- Warner Bros Interactive Entertainament- Developer in "Howarts Legacy".</li>
+          </ul></p>
+</section>
+    <section class="Estudios"> <h2>Formación Académica</h2>
         <p>MIT-Computacional Science and Engineering (2005-2010) <br> Bussiness Analitics- Harvard(2011-2012)</p>
-    <a href="https://cse.mit.edu/">
-        <img src="multimedia/MIT.png" 
-        alt="MIT" width="150" height="150" title="Computacional Science and Engineering" />
+    <div class="links"><a href="https://cse.mit.edu/">
+        <img class="mit" src="multimedia/MIT.png" 
+        alt="MIT" title="Computacional Science and Engineering" />
         </a>
         <a href="https://online.hbs.edu/courses/business-analytics/">
-        <img src="multimedia/harvard.jpg" 
-        alt="Harvard" width="150" height="150"title="Bussiness Analitics"/> </a> 
-    </section>
-    <section class="InfoPersonal"> <h2>Sobre mí</h2>
-        <img src="multimedia/rita.jpg" alt="Rita Stewart, Software Engineer"/>
-        <p>Apasionada de la tecnología en general y los negocios...</p>
-    </section>
+        <img class="harvard" src="multimedia\Harvard_University_shield.png" 
+        alt="Harvard" title="Bussiness Analitics"/> </a> </div></section>
+        <section class="motivos"> <h2 class="mot">Objetivo Laboral</h2>
+            <p>Deseo seguir desarrollandome como profesional en la industria del software, sea cual sea el ámbito.           
+            </p></section>
+            <button class="btn" onclick="location.href='contacto.html'">¡Contáctame!</button>
     <footer>
         <p> Proyecto final de desarrollo Front end Argentina Programa 4.0 <br> Autor: Gabriel Tardi</p>
     </footer>
