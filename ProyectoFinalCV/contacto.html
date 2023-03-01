@@ -9,17 +9,20 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+   
     <div class="container-form">
         <div class="info-form">
             <h2>¡Gracias por interesarte en mi!</h2>
             <p>Por favor, coloca tus datos y me contactaré contigo a la mayor brevedad.</p>
         </div>
-        <form action="#" autocomplete="off">
-            <input type="text" name="nombre" placeholder="Nombre Completo" class="campo">
-            <input type="emal" name="email" placeholder="Email" class="campo">
-            <textarea name="mensaje" placeholder="Mensaje"></textarea>
-            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+        <form action="#" autocomplete="off" onsubmit="alerta()">
+            <input type="text" name="nombre" placeholder="Nombre completo" class="campo">
+            <input type="email" name="email" placeholder="Email" class="campo">
+            <textarea name="mensaje" placeholder="Mensaje" class="campo"></textarea>
+            <input type="submit" name="enviar" value="Enviar Mensaje" class= "btn-enviar" id="btn">
         </form>
     </div>
+    <script src="Java\script2.js"></script>
 </body>
+
 </html>
