@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Proyecto Final CV 2023</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <link rel="stylesheet" href="estilos\estilos.css">
-        <link rel="icon" type="image/x-icon" href="estilos/proyectofinal.ico">
-        <!--Open Graph Data-->
-        <meta property="og:title" content="Proyecto Final Front End" />
-        <meta property="og:type" content="Proyecto" />
-        <meta property="og:url" content="www.ejemplo.com" />
-        <meta property="og:image" content="estilos/proyectofinal.ico" />
-        <meta property="og:description" content="Proyecto final curso Front End Argentina Programa 4.0" />
-    </head>
-    <body >
-        <span class="icon-Calendar"></span>
+
+<head>
+    <title>Proyecto Final CV 2023</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos\estilos.css">
+    <link rel="icon" type="image/x-icon" href="estilos/proyectofinal.ico">
+    <!--Open Graph Data-->
+    <meta property="og:title" content="Proyecto Final Front End" />
+    <meta property="og:type" content="Proyecto" />
+    <meta property="og:url" content="www.ejemplo.com" />
+    <meta property="og:image" content="estilos/proyectofinal.ico" />
+    <meta property="og:description" content="Proyecto final curso Front End Argentina Programa 4.0" />
+</head>
+
+<body>
     <header>
         <img class="fotocv" src="multimedia/rita.jpg" alt="Rita Stewart, Software Engineer" />
         <h1 class="titulo">Rita Stewart</h1>
-        <p class="datos"><ul id="lista1">
-        <li><img class="icon1" src="multimedia\391-mail4.svg" alt="icono mail" />rita.stewart@gmail.com </li>
-        <li><img class="icon2" src="multimedia\084-calendar.svg" alt="icono calendario" />09/06/1989 </li>
-        <li><img class="icon3" src="multimedia\001-home.svg" alt="icono casa" />6644 Oak Lawn Ave, TEXAS, EE.UU </li>
-        <li><img class="icon4" src="multimedia\067-phone.svg" alt="icono tel" />(576)622-5617 </p></li> 
-    </ul>
+        <p class="datos">
+        <ul id="lista1">
+            <li><img class="icon" src="multimedia\391-mail4.svg" alt="icono mail" />rita.stewart@gmail.com </li>
+            <li><img class="icon" src="multimedia\084-calendar.svg" alt="icono calendario" />09/06/1989 </li>
+            <li><img class="icon" src="multimedia\001-home.svg" alt="icono casa" />6644 Oak Lawn Ave, TEXAS, EE.UU
+            </li>
+            <li><img class="icon" src="multimedia\067-phone.svg" alt="icono tel" />(576)622-5617 </p>
+            </li>
+        </ul>
     </header>
-<section class="InfoPersonal"> <h2 class="personal">Acerca de mí</h2>
-    <p>Apasionada de la tecnología en general y los negocios, aficionada de los videojuegos como hobby, me dedico
-        al desarrollo de software en general, con experiencia en el mundo administrativo con herramientas internas,
-        en el de negocios con herramientas que se venden al público y con videojuegos.
-    </p></section>
-    <section class="ExperienciaLaboral"> <h2 class="laboral">Experiencia Laboral</h2>
-        <p class="exp"><ul>
-            <li>2013-2014- Reconex - Developer</li>
-            <li>2014-2016- Trust Digital - Developer</li>
-            <li>2016-2018- Motion Twin - Developer in "Dead Cells"</li>
-            <li>2018-2023- Warner Bros Interactive Entertainament- Developer in "Howarts Legacy".</li>
-          </ul></p>
-</section>
-    <section class="Estudios"> <h2 class="est">Formación Académica</h2>
-        <p>MIT-Computacional Science and Engineering (2005-2010) <br> Bussiness Analitics- Harvard(2011-2012)</p>
-    <div class="links"><a href="https://cse.mit.edu/">
-        <img class="mit" src="multimedia/MIT.png" 
-        alt="MIT" title="Computacional Science and Engineering" />
-        </a>
-        <a href="https://online.hbs.edu/courses/business-analytics/">
-        <img class="harvard" src="multimedia\Harvard_University_shield.png" 
-        alt="Harvard" title="Bussiness Analitics"/> </a> </div></section>
-        <section class="motivos"> <h2 class="mot">Objetivo Laboral</h2>
-            <p>Deseo seguir desarrollandome como profesional en la industria del software, sea cual sea el ámbito.
-                orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus felis ante, quis fringilla 
-                nibh tristique commodo. Sed interdum vehicula ligula nec luctus. Etiam sit amet nulla fermentum, 
-                porttitor tellus sed, varius tellus. Cras ac pharetra nunc. Nunc porta non ligula ut dignissim. 
-                Donec ut eros interdum, suscipit risus sit amet, pulvinar augue. Ut in libero tempus, rutrum sem at, 
-                rhoncus lorem.           
-            </p></section>
-            <button class="btn" onclick="location.href='contacto.html'">¡Contáctame!</button>
+    <section class="InfoPersonal">
+        <h2 class="personal">Acerca de mí</h2>
+        <p>Apasionada de la tecnología en general y los negocios, aficionada de los videojuegos como hobby, me dedico
+            al desarrollo de software en general, con experiencia en el mundo administrativo con herramientas internas,
+            en el de negocios con herramientas que se venden al público y con videojuegos.
+        </p>
+    </section>
+    <section class="ExperienciaLaboral">
+        <h2 class="laboral">Experiencia Laboral</h2>
+        <section class="imgFondo">
+            <img class="fondo" src="multimedia\real.png" alt="Malabares" title="Malabares" />
+        </section>
+        <p>
+        <ul id="lista2">
+            <li onmouseover="resalt1()" onmouseout="normal1()" onclick="urlRec()" id="reconex">2013-2014- Reconex -
+                Developer</li>
+            <li onmouseover="resalt2()" onmouseout="normal2()" onclick="urlRec()" onclick="urlTru()" id="trust">
+                2014-2016- Trust Digital - Developer</li>
+            <li onmouseover="resalt3()" onmouseout="normal3()" onclick="urlRec()" onclick="urlMot()" id="motion">
+                2016-2018- Motion Twin - Developer in "Dead Cells"</li>
+            <li onmouseover="resalt4()" onmouseout="normal4()" onclick="urlRec()" onclick="urlWar()" id="warner">
+                2018-2023- Warner Bros Interactive Entertainament- Developer in "Howarts Legacy".</li>
+        </ul>
+        </p>
+    </section>
+
+    <section class="Estudios">
+        <h2 class="est">Formación Académica</h2>
+        <p class="est-links">MIT-Computacional Science and Engineering (2005-2010) <br> Bussiness Analitics-
+            Harvard(2011-2012)</p>
+        <div class="links"><a href="https://cse.mit.edu/">
+                <img class="mit" src="multimedia/MIT.png" alt="MIT" title="Computacional Science and Engineering" />
+            </a>
+            <a href="https://online.hbs.edu/courses/business-analytics/">
+                <img class="harvard" src="multimedia\Harvard_University_shield.png" alt="Harvard"
+                    title="Bussiness Analitics" /> </a>
+        </div>
+    </section>
+    <section class="motivos">
+        <h2 class="mot">Objetivo Laboral</h2>
+        <p>Deseo seguir desarrollandome como profesional en la industria del software, sea cual sea el ámbito.
+            orem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus felis ante, quis fringilla
+            nibh tristique commodo. Sed interdum vehicula ligula nec luctus. Etiam sit amet nulla fermentum,
+            porttitor tellus sed, varius tellus. Cras ac pharetra nunc. Nunc porta non ligula ut dignissim.
+            Donec ut eros interdum, suscipit risus sit amet, pulvinar augue. Ut in libero tempus, rutrum sem at,
+            rhoncus lorem.
+        </p>
+    </section>
+    <div class="boton" >
+        <button id="btn" class="btn" onmouseover="resalt5()" onmouseout="normal5()" onclick="redCont()">¡Contáctame!</button>
+    </div>
     <footer>
+
         <p> Proyecto final de desarrollo Front end Argentina Programa 4.0 <br> Autor: Gabriel Tardi</p>
     </footer>
-    </body>
+    <script src="Java\script1.js"></script>
+</body>
+
 </html>

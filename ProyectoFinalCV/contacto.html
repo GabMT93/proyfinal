@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,20 +9,27 @@
     <!--Icon-Font-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   
+
     <div class="container-form">
         <div class="info-form">
             <h2>¡Gracias por interesarte en mi!</h2>
             <p>Por favor, coloca tus datos y me contactaré contigo a la mayor brevedad.</p>
         </div>
-        <form action="#" autocomplete="off" onsubmit="alerta()">
-            <input type="text" name="nombre" placeholder="Nombre completo" class="campo">
-            <input type="email" name="email" placeholder="Email" class="campo">
-            <textarea name="mensaje" placeholder="Mensaje" class="campo"></textarea>
-            <input type="submit" name="enviar" value="Enviar Mensaje" class= "btn-enviar" id="btn">
+        <form action="#" autocomplete="off" method="POST" id="contacto">
+            <input type="text" name="nombre" placeholder="Nombre completo" class="campo" id="nombre">
+            <input type="email" name="email" placeholder="Email" class="campo" id="mail">
+            <textarea name="mensaje" placeholder="Mensaje" class="campo" id="txt"></textarea>
+            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar" id="btn">
+            <p class="warnings" id="warnings"> </p>
         </form>
     </div>
+    
+    <footer>
+        <img class="corazon" src="multimedia\ctech.png" alt="coraTech" title="corazon" />
+        <p> Proyecto final de desarrollo Front end Argentina Programa 4.0 <br> Autor: Gabriel Tardi</p>
+        </footer>
     <script src="Java\script2.js"></script>
 </body>
 

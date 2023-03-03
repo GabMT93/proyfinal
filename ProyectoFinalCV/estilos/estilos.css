@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,44 +10,70 @@
     width: auto;
     height: auto;
     margin: 0px;
-    padding: 0px;
-    border:0px;
-  }
- body {
+    border: 0px;
+}
+
+body {
     min-height: 100vh;
     background-color: bisque;
     text-align: left;
-  }
+}
+
+/** iconos header*/
 #lista1 li {
-    display:inline;
-    padding-left:3px;
-    padding-right:3px;
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-.icon1,.icon2,.icon3,.icon4 {
-    transform: scale(1.5);
-    padding: 5px;
+
+/** iconos header*/
+.imgFondo {
+    float: right;
+    padding-right: 150px;
 }
-.laboral,.est {
+
+#lista2 li,
+.est-links {
+    padding-left: 7px;
+    box-sizing: content-box;
+}
+
+.icon {
+    transform: scale(2);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.laboral,
+.est {
     text-align: left;
+    padding: 2px;
 }
-.personal,.mot {
+
+.personal,
+.mot {
     text-align: center;
 }
+.ExperienciaLaboral {
+    width: auto;
+}
 .fotocv {
-    float:right;
+    float: right;
     border-radius: 100px;
 }
-header,footer {
+
+header,
+footer {
     background-color: rgba(206, 36, 36, 0.753);
     text-align: center;
     color: beige;
 }
-.exp {
-    padding-left: 5px;
-}
-.mit,.harvard {
+
+.mit,
+.harvard {
     cursor: pointer;
 }
+
 .btn {
     padding: 15px;
     font-size: 16px;
@@ -60,4 +87,9 @@ header,footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.boton {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
